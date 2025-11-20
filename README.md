@@ -1,6 +1,6 @@
 
 
-Gensyn CodeAssist – Full Installation \& Usage Guide (Ubuntu / Windows / macOS)
+Gensyn CodeAssist – Full Installation  Usage Guide (Ubuntu / Windows / macOS)
 
 
 
@@ -28,7 +28,7 @@ The following programs are mandatory for CodeAssist to run:
 
 Required to run the backend.
 
-Download → https://www.python.org/downloads/](https://www.python.org/downloads/
+Download → https://www.python.org/downloads/ - https://www.python.org/downloads/
 
 
 
