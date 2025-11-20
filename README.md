@@ -1,13 +1,3 @@
-Aşağıda \*\*tamamen birleştirilmiş ve GitHub’a direkt yüklenebilir\*\*, profesyonel formatta \*\*eksiksiz Gensyn CodeAssist README.md\*\* hazırlanmıştır.
-
-
-
-Bu dosyayı \*\*README.md\*\* olarak GitHub reposuna aynen ekleyebilirsin.
-
-
-
----
-
 
 
 \# \*\*Gensyn CodeAssist – Full Installation \& Usage Guide (Ubuntu / Windows / macOS)\*\*
