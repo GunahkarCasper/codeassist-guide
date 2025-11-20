@@ -22,7 +22,7 @@ The following programs are \*\*mandatory\*\* for CodeAssist to run:
 
 
 
-✅ \*\*Python 3.10+
+✅ Python 3.10+
 
 
 
@@ -36,7 +36,7 @@ Download → \[https://www.python.org/downloads/](https://www.python.org/downloa
 
 
 
-✅ \*\*Docker
+✅ Docker
 
 
 
