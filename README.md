@@ -1,4 +1,4 @@
-🚀 Gensyn CodeAssist – Full Installation & Usage Guide
+ Gensyn CodeAssist – Full Installation & Usage Guide
 
 Gensyn CodeAssist is an AI coding assistant that learns from your real-time interactions.
 This guide explains installation, login, usage, training workflow, and model updates.
