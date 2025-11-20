@@ -1,6 +1,6 @@
 
 
-\# \*\*Gensyn CodeAssist – Full Installation \& Usage Guide (Ubuntu / Windows / macOS)\*\*
+Gensyn CodeAssist – Full Installation \& Usage Guide (Ubuntu / Windows / macOS)
 
 
 
