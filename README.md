@@ -106,14 +106,8 @@ Give permissions:
 Optional Tools
 
 
-
-| Tool                    | Purpose        | Link                                                                             |
-
-| ----------------------- | -------------- | -------------------------------------------------------------------------------- |
-
-| VSCode                  | Code editor    | \[https://code.visualstudio.com/download](https://code.visualstudio.com/download) |
-
-| build-essential (Linux) | Compiler tools | `sudo apt install -y build-essential`                                            |
+VSCode    Code editor   https://code.visualstudio.com/download  -  https://code.visualstudio.com/download  
+build-essential (Linux)  Compiler tools  `sudo apt install -y build-essential`                                          
 
 
 
