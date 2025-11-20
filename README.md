@@ -449,7 +449,7 @@ persistent-data/trainer/models/
 
 
 
-If your \*\*HuggingFace token\*\* is valid:
+If your HuggingFace token is valid:
 
 
 
