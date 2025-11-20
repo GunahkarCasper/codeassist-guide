@@ -1,499 +1,230 @@
+🚀 Gensyn CodeAssist – Full Installation & Usage Guide
 
-
-Gensyn CodeAssist – Full Installation  Usage Guide (Ubuntu / Windows / macOS)
-
-
-
-Gensyn CodeAssist is an AI coding assistant that learns from your interactions in real time.
-
+Gensyn CodeAssist is an AI coding assistant that learns from your real-time interactions.
 This guide explains installation, login, usage, training workflow, and model updates.
 
-
-
 ---
-
-
 
 1. Required Software (All Platforms)
 
+Python 3.10+
 
+Download:
+[https://www.python.org/downloads/](https://www.python.org/downloads/)
 
-The following programs are mandatory for CodeAssist to run:
+Docker
 
+Ubuntu:
+[https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/)
 
+Windows/macOS:
+[https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
 
-✅ Python 3.10+
+Curl
 
-
-
-Required to run the backend.
-
-Download → https://www.python.org/downloads/ - https://www.python.org/downloads/
-
-
-
----
-
-
-
-✅ Docker
-
-
-
-All CodeAssist components run inside Docker containers.
-
-
-
- Ubuntu → https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/
-
- Windows/macOS →https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/
-
-
-
----
-
-
-
-✅ Curl
-
-
-
-Used for fetching UV and other scripts.
-
-Ubuntu installation:
-
-
-
-```bash
-
-sudo apt install -y curl
+Ubuntu install:
 
 ```
+sudo apt install -y curl
+```
 
+General download:
+[https://curl.se/download.html](https://curl.se/download.html)
 
+HuggingFace Token
 
-General download → \[https://curl.se/download.html](https://curl.se/download.html)
+Create token:
+[https://huggingface.co/settings/tokens](https://huggingface.co/settings/tokens)
 
+Required permissions:
 
-
----
-
-
-
-✅ HuggingFace Token
-
-
-
-Required for accessing and uploading models.
-
-
-
-Create token → https://huggingface.co/settings/tokens](https://huggingface.co/settings/tokens
-
-Give permissions:
-
-
-
-✔ Read
-✔ Write
-
-
-
----
-
-
+* Read
+* Write
 
 Optional Tools
 
-
-VSCode    Code editor   https://code.visualstudio.com/download  -  https://code.visualstudio.com/download  
-build-essential (Linux)  Compiler tools  `sudo apt install -y build-essential`                                          
-
-
+* VSCode → [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
+* build-essential (Linux) → `sudo apt install -y build-essential`
 
 ---
 
+2. Full Installation (Ubuntu)
 
-
-2. Full Installation Steps (Ubuntu)
-
-
-
-1) Update System
-
-
-
-```bash
-
-sudo apt update \&\& sudo apt upgrade -y
+Update system
 
 ```
+sudo apt update && sudo apt upgrade -y
+```
 
+Install Python 3.10+
 
-
----
-
-
-
-2) Install Python 3.10+
-
-
-
-```bash
-
+```
 sudo apt install -y python3 python3-venv python3-pip
-
 ```
 
+Install Docker
 
-
----
-
-
-
-3) Install Docker
-
-
-
-```bash
-
+```
 sudo apt install -y docker.io
-
 sudo systemctl enable --now docker
-
 sudo usermod -aG docker "$USER"
-
 ```
 
-
-
-Important: Restart your terminal after this step.
-
-
+> Restart your terminal after this step.
 
 Verify:
 
-
-
-```bash
-
+```
 docker ps
-
 ```
 
+Clone CodeAssist
 
-
----
-
-
-
-4) Clone CodeAssist
-
-
-
-```bash
-
+```
 cd ~
-
 git clone https://github.com/gensyn-ai/codeassist.git
-
 cd codeassist
-
 ```
 
-
-
----
-
-
-
-5) Add HuggingFace Token
-
-
-
-```bash
-
-export HF\_TOKEN="YOUR\_TOKEN\_HERE"
+Set HuggingFace Token
 
 ```
+export HF_TOKEN="YOUR_TOKEN_HERE"
+```
 
+Start CodeAssist
 
-
----
-
-
-
-6) Start CodeAssist
-
-
-
-```bash
-
+```
 uv run run.py
-
 ```
-
-
 
 Open in browser:
-
-👉 http://localhost:3000](http://localhost:3000
-
-
+[http://localhost:3000](http://localhost:3000)
 
 ---
-
-
 
 3. Restarting CodeAssist
 
+Manual restart
 
-
-Manual Restart
-
-
-
-```bash
-
+```
 cd ~/codeassist
-
 uv run run.py
-
 ```
 
+Optional quick alias
 
-
-Add Quick Command
-
-
-
-```bash
-
-echo 'alias codeassist="cd ~/codeassist \&\& uv run run.py"' >> ~/.bashrc
-
+```
+echo 'alias codeassist="cd ~/codeassist && uv run run.py"' >> ~/.bashrc
 source ~/.bashrc
-
 ```
 
+Run anytime:
 
-
-Launch anytime:
-
-
-
-```bash
-
+```
 codeassist
-
 ```
-
-
 
 ---
 
+4. User Login & Authentication
 
+You can log in using:
 
-4. User Login \& Authentication
+* Email (one-time code)
+* Google login
 
-
-
-When CodeAssist launches, a login screen will appear.
-
-
-
-You may sign in using:
-
-
-
-Email login (one-time code)
-
-Google login
-
-
-
-After your first login, your local auth mapping is stored at:
-
-
+Your auth data is saved at:
 
 ```
-
 persistent-data/auth/userKeyMap.json
-
 ```
 
-
-
 ---
-
-
 
 5. Selecting and Solving Problems
 
+Pick difficulty from the sidebar:
 
+* Easy
+* Medium
+* Hard
 
-Use the left sidebar to choose difficulty:
+As you type:
 
-
-
-
-
-
-
-When you start typing:
-
-
-
-The assistant writes code directly into your file
-Your edits provide learning signals
-Accept, adjust, or delete — all counted during training
-
-
+* AI writes code directly
+* Your edits act as learning signals
+* Accept / edit / delete all affect training
 
 ---
-
-
 
 6. Usage Tips
 
-
-
-Pause the Assistant
-
-
-
-Press:
-
-
+Pause assistant:
 
 ```
-
 Shift + Space
-
 ```
 
-
-
-Cursor Position Matters
-
-
-
-AI suggestions depend on cursor location.
-
-Keep it close to the section you are working on.
-
-
+Cursor placement matters — keep it close to the area you’re working on.
 
 ---
-
-
 
 7. Training Logic (How CodeAssist Learns)
 
+CodeAssist logs:
 
+* Your edits
+* AI suggestions
+* Accept/reject actions
+* Final code
 
-While the web UI is open, CodeAssist logs everything:
-
-
-
-Your edits
-Assistant’s suggestions
-Accept/reject actions
-Final code solution
-
-
-
-To start training:
-
-
-
-Return to the terminal where CodeAssist is running and press:
-
-
+To begin training:
 
 ```
-
 Ctrl + C
-
 ```
-
-
-
-This stops the session and automatically starts model training.
-
-
 
 ---
-
-
 
 8. What Happens During Training
 
-
-
-During training, CodeAssist will:
-
-
-
-Compare assistant actions vs your final edits
-Calculate rewards/penalties
-Update your model
-Save the new version to:
-
-
+* AI actions compared with your edits
+* Rewards/penalties calculated
+* Model updated
+* Saved to:
 
 ```
-
 persistent-data/trainer/models/
-
 ```
 
-
-
-If your HuggingFace token is valid:
-
-
-
-Your updated model is uploaded to your HF account automatically
-
-
+If HF token is valid → model uploads automatically.
 
 ---
-
-
 
 9. Using Your Updated Model
 
+After training:
 
-
-After training completes:
-
-
-
-1.Restart CodeAssist
-
-2.The newly fine-tuned model loads automatically
-
-3.Continue solving tasks with your personalised assistant
-
-
+1. Restart CodeAssist
+2. Updated model loads automatically
+3. Continue solving tasks with your personal fine-tuned model
 
 ---
 
+10. Points, Rewards & HF Upload Confirmation
+
+After training:
+
+* Check terminal logs
+* Check CodeAssist dashboard
+* Check your HuggingFace profile
+
+If upload succeeded → points appear automatically.
 
 
-10. Points, Rewards \& HF Upload Confirmation
 
 
-
-After stopping with Ctrl + C
-
+-
 
 
-Check training logs
-
-Check your Gensyn CodeAssist dashboard
-
-Check your HuggingFace profile
-
-
-If the model uploaded successfully, your points will appear automatically.
