@@ -221,10 +221,3 @@ After training:
 * Check your HuggingFace profile
 
 If upload succeeded → points appear automatically.
-
-
-
-
--
-
-
