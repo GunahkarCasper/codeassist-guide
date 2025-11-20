@@ -223,7 +223,7 @@ export HF\_TOKEN="YOUR\_TOKEN\_HERE"
 
 
 
-\### \*\*6) Start CodeAssist\*\*
+6) Start CodeAssist
 
 
 
