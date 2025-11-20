@@ -18,7 +18,7 @@ This guide explains installation, login, usage, training workflow, and model upd
 
 
 
-The following programs are \*\*mandatory\*\* for CodeAssist to run:
+The following programs are mandatory for CodeAssist to run:
 
 
 
@@ -28,7 +28,7 @@ The following programs are \*\*mandatory\*\* for CodeAssist to run:
 
 Required to run the backend.
 
-Download → \[https://www.python.org/downloads/](https://www.python.org/downloads/)
+Download → https://www.python.org/downloads/](https://www.python.org/downloads/
 
 
 
@@ -44,9 +44,9 @@ All CodeAssist components run inside Docker containers.
 
 
 
- Ubuntu → \[https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/)
+ Ubuntu → https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/
 
- Windows/macOS → \[https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
+ Windows/macOS →https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/
 
 
 
@@ -88,15 +88,14 @@ Required for accessing and uploading models.
 
 
 
-Create token → \[https://huggingface.co/settings/tokens](https://huggingface.co/settings/tokens)
+Create token → https://huggingface.co/settings/tokens](https://huggingface.co/settings/tokens
 
 Give permissions:
 
 
 
-\* ✔ Read
-
-\* ✔ Write
+✔ Read
+✔ Write
 
 
 
@@ -244,7 +243,7 @@ uv run run.py
 
 Open in browser:
 
-👉 \*\*\[http://localhost:3000](http://localhost:3000)\*\*
+👉 http://localhost:3000](http://localhost:3000
 
 
 
@@ -351,9 +350,7 @@ When you start typing:
 
 
 The assistant writes code directly into your file
-
- Your edits provide learning signals
-
+Your edits provide learning signals
 Accept, adjust, or delete — all counted during training
 
 
@@ -382,7 +379,7 @@ Shift + Space
 
 
 
-\### \*\*Cursor Position Matters\*\*
+Cursor Position Matters
 
 
 
@@ -462,7 +459,7 @@ If your \*\*HuggingFace token\*\* is valid:
 
 
 
-\* Your updated model is uploaded to your HF account automatically
+Your updated model is uploaded to your HF account automatically
 
 
 
@@ -494,7 +491,7 @@ After training completes:
 
 
 
-After stopping with \*\*Ctrl + C\*\*:
+After stopping with Ctrl + C
 
 
 
