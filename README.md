@@ -14,7 +14,7 @@ This guide explains installation, login, usage, training workflow, and model upd
 
 
 
-\# \*\*1. Required Software (All Platforms)\*\*
+1. Required Software (All Platforms)
 
 
 
@@ -22,7 +22,7 @@ The following programs are \*\*mandatory\*\* for CodeAssist to run:
 
 
 
-\### ✅ \*\*Python 3.10+\*\*
+✅ \*\*Python 3.10+
 
 
 
@@ -36,7 +36,7 @@ Download → \[https://www.python.org/downloads/](https://www.python.org/downloa
 
 
 
-\### ✅ \*\*Docker\*\*
+✅ \*\*Docker
 
 
 
@@ -44,9 +44,9 @@ All CodeAssist components run inside Docker containers.
 
 
 
-\* Ubuntu → \[https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/)
+ Ubuntu → \[https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/)
 
-\* Windows/macOS → \[https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
+ Windows/macOS → \[https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
 
 
 
@@ -54,7 +54,7 @@ All CodeAssist components run inside Docker containers.
 
 
 
-\### ✅ \*\*Curl\*\*
+✅ Curl
 
 
 
@@ -80,7 +80,7 @@ General download → \[https://curl.se/download.html](https://curl.se/download.h
 
 
 
-\### ✅ \*\*HuggingFace Token\*\*
+✅ HuggingFace Token
 
 
 
