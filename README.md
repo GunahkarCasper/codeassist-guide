@@ -10,15 +10,15 @@ This guide explains installation, login, usage, training workflow, and model upd
 Python 3.10+
 
 Download:
-[https://www.python.org/downloads/](https://www.python.org/downloads/)
+https://www.python.org/downloads/
 
 Docker
 
 Ubuntu:
-[https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/)
+https://docs.docker.com/engine/install/ubuntu/
 
 Windows/macOS:
-[https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
+https://www.docker.com/products/docker-desktop/
 
 Curl
 
@@ -29,12 +29,12 @@ sudo apt install -y curl
 ```
 
 General download:
-[https://curl.se/download.html](https://curl.se/download.html)
+https://curl.se/download.html
 
 HuggingFace Token
 
 Create token:
-[https://huggingface.co/settings/tokens](https://huggingface.co/settings/tokens)
+https://huggingface.co/settings/tokens
 
 Required permissions:
 
@@ -43,7 +43,7 @@ Required permissions:
 
 Optional Tools
 
-* VSCode → [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
+* VSCode →  https://code.visualstudio.com/download
 * build-essential (Linux) → `sudo apt install -y build-essential`
 
 ---
@@ -99,7 +99,7 @@ uv run run.py
 ```
 
 Open in browser:
-[http://localhost:3000](http://localhost:3000)
+http://localhost:3000
 
 ---
 
