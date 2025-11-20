@@ -104,7 +104,7 @@ Give permissions:
 
 
 
-\### \*\*Optional Tools\*\*
+Optional Tools
 
 
 
@@ -122,11 +122,11 @@ Give permissions:
 
 
 
-\# \*\*2. Full Installation Steps (Ubuntu)\*\*
+2. Full Installation Steps (Ubuntu)
 
 
 
-\### \*\*1) Update System\*\*
+1) Update System
 
 
 
@@ -142,7 +142,7 @@ sudo apt update \&\& sudo apt upgrade -y
 
 
 
-\### \*\*2) Install Python 3.10+\*\*
+2) Install Python 3.10+
 
 
 
@@ -158,7 +158,7 @@ sudo apt install -y python3 python3-venv python3-pip
 
 
 
-\### \*\*3) Install Docker\*\*
+3) Install Docker
 
 
 
@@ -174,7 +174,7 @@ sudo usermod -aG docker "$USER"
 
 
 
-\*\*Important:\*\* Restart your terminal after this step.
+Important: Restart your terminal after this step.
 
 
 
@@ -194,7 +194,7 @@ docker ps
 
 
 
-\### \*\*4) Clone CodeAssist\*\*
+4) Clone CodeAssist
 
 
 
@@ -214,7 +214,7 @@ cd codeassist
 
 
 
-\### \*\*5) Add HuggingFace Token\*\*
+5) Add HuggingFace Token
 
 
 
@@ -252,11 +252,11 @@ Open in browser:
 
 
 
-\# \*\*3. Restarting CodeAssist\*\*
+3. Restarting CodeAssist
 
 
 
-\### \*\*Manual Restart\*\*
+Manual Restart
 
 
 
@@ -270,7 +270,7 @@ uv run run.py
 
 
 
-\### \*\*Add Quick Command\*\*
+Add Quick Command
 
 
 
@@ -300,7 +300,7 @@ codeassist
 
 
 
-\# \*\*4. User Login \& Authentication\*\*
+4. User Login \& Authentication
 
 
 
@@ -312,9 +312,9 @@ You may sign in using:
 
 
 
-\* \*\*Email login (one-time code)\*\*
+Email login (one-time code)
 
-\* \*\*Google login\*\*
+Google login
 
 
 
@@ -334,7 +334,7 @@ persistent-data/auth/userKeyMap.json
 
 
 
-\# \*\*5. Selecting and Solving Problems\*\*
+5. Selecting and Solving Problems
 
 
 
@@ -342,11 +342,7 @@ Use the left sidebar to choose difficulty:
 
 
 
-\* \*\*Easy\*\*
 
-\* \*\*Medium\*\*
-
-\* \*\*Hard\*\*
 
 
 
@@ -354,11 +350,11 @@ When you start typing:
 
 
 
-\* The assistant writes code directly into your file
+The assistant writes code directly into your file
 
-\* Your edits provide learning signals
+ Your edits provide learning signals
 
-\* Accept, adjust, or delete — all counted during training
+Accept, adjust, or delete — all counted during training
 
 
 
@@ -366,11 +362,11 @@ When you start typing:
 
 
 
-\# \*\*6. Usage Tips\*\*
+6. Usage Tips
 
 
 
-\### \*\*Pause the Assistant\*\*
+Pause the Assistant
 
 
 
@@ -400,7 +396,7 @@ Keep it close to the section you are working on.
 
 
 
-\# \*\*7. Training Logic (How CodeAssist Learns)\*\*
+7. Training Logic (How CodeAssist Learns)
 
 
 
@@ -408,17 +404,14 @@ While the web UI is open, CodeAssist logs everything:
 
 
 
-\* Your edits
-
-\* Assistant’s suggestions
-
-\* Accept/reject actions
-
-\* Final code solution
+Your edits
+Assistant’s suggestions
+Accept/reject actions
+Final code solution
 
 
 
-\### \*\*To start training:\*\*
+To start training:
 
 
 
@@ -442,7 +435,7 @@ This stops the session and automatically starts model training.
 
 
 
-\# \*\*8. What Happens During Training\*\*
+8. What Happens During Training
 
 
 
@@ -450,13 +443,10 @@ During training, CodeAssist will:
 
 
 
-\* Compare assistant actions vs your final edits
-
-\* Calculate rewards/penalties
-
-\* Update your model
-
-\* Save the new version to:
+Compare assistant actions vs your final edits
+Calculate rewards/penalties
+Update your model
+Save the new version to:
 
 
 
@@ -480,7 +470,7 @@ If your \*\*HuggingFace token\*\* is valid:
 
 
 
-\# \*\*9. Using Your Updated Model\*\*
+9. Using Your Updated Model
 
 
 
@@ -488,11 +478,11 @@ After training completes:
 
 
 
-1\. Restart CodeAssist
+1.Restart CodeAssist
 
-2\. The newly fine-tuned model loads automatically
+2.The newly fine-tuned model loads automatically
 
-3\. Continue solving tasks with your personalised assistant
+3.Continue solving tasks with your personalised assistant
 
 
 
@@ -500,7 +490,7 @@ After training completes:
 
 
 
-\# \*\*10. Points, Rewards \& HF Upload Confirmation\*\*
+10. Points, Rewards \& HF Upload Confirmation
 
 
 
@@ -508,17 +498,11 @@ After stopping with \*\*Ctrl + C\*\*:
 
 
 
-\* Check training logs
+Check training logs
 
-\* Check your \*\*Gensyn CodeAssist dashboard\*\*
+Check your Gensyn CodeAssist dashboard
 
-\* Check your \*\*HuggingFace profile\*\*
-
+Check your HuggingFace profile
 
 
 If the model uploaded successfully, your points will appear automatically.
-
-
-
-
-
